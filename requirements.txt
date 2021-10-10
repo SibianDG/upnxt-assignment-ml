@@ -1,1 +1,5 @@
 jupyter
+pandas~=1.2.4
+numpy~=1.20.1
+scikit-learn~=0.24.1
+matplotlib~=3.3.4
