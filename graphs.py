@@ -66,19 +66,19 @@ plt.show()
 train_set_top_5_filtered = [x for x in train_set_top_5 if len(x['ingredients']) > 1]
 print(len(train_set_top_5), "--", len(train_set_top_5_filtered))
 
-test_list = ['eggs', 'salt', 'peper', 'chili', 'crab', 'onion', 'oil', 'corn starch']
-test_list_final = []
-test_list_string = ""
-
-for x, y in enumerate(test_list):
-    test_list_string = test_list_string + y + ""
-test_list_final.append(test_list_string)
-
-vectors2 = vectorizer.transform(test_list_final)
-feature_names = vectorizer.get_feature_names()
-
-vectors_array_test = vectors2.toarray()
-df_test = pd.DataFrame(vectors_array_test, columns=feature_names)
-
-test_predict = regressor.predict(df_test)
-print(test_predict)
+# test_list = ['eggs', 'salt', 'peper', 'chili', 'crab', 'onion', 'oil', 'corn starch']
+# test_list_final = []
+# test_list_string = ""
+#
+# for x, y in enumerate(test_list):
+#     test_list_string = test_list_string + y + ""
+# test_list_final.append(test_list_string)
+#
+# vectors2 = vectorizer.transform(test_list_final)
+# feature_names = vectorizer.get_feature_names()
+#
+# vectors_array_test = vectors2.toarray()
+# df_test = pd.DataFrame(vectors_array_test, columns=feature_names)
+#
+# test_predict = regressor.predict(df_test)
+# print(test_predict)
